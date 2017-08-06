@@ -1,5 +1,5 @@
 def remove_dollar_sign(s):
-    s = s.translate(None, "$") ##What wrong???
+    s = s.replace("$","")
     return s
 
 s = '150$foranapple'
