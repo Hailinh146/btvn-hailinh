@@ -1,0 +1,5 @@
+/Users/Yui/Documents/Techkids/BTVN_HaiLinh/Session6/Session6/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/Yui/Documents/Techkids/BTVN_HaiLinh/Session6/Session6/bin/Debug/Session6.exe.mdb
+/Users/Yui/Documents/Techkids/BTVN_HaiLinh/Session6/Session6/bin/Debug/Session6.exe
+/Users/Yui/Documents/Techkids/BTVN_HaiLinh/Session6/Session6/obj/x86/Debug/Session6.exe
+/Users/Yui/Documents/Techkids/BTVN_HaiLinh/Session6/Session6/obj/x86/Debug/Session6.exe.mdb
