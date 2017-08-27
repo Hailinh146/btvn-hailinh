@@ -1,0 +1,57 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
+public class Hintchanger: MonoBehaviour {
+
+	public Image hint1;
+	public Image hint2;
+
+	public List<Image> hintsList;
+	public Button hintButton;
+
+	//public GameObject hint3;
+
+	int hintCurrentIndex = 0;
+
+// Cach 1:
+//	public void OnHintButtonClick(){
+//		if (hintCurrentIndex == 1)
+//		{
+//			hint1.gameObject.SetActive (false);
+//			hint2.gameObject.SetActive (true);
+//			hintCurrentIndex = 2;
+//		} else if (hintCurrentIndex == 2)
+//		{
+//			hint1.gameObject.SetActive (true);
+//			hint2.gameObject.SetActive (false);
+//			hintCurrentIndex = 1;
+//		}
+//	}
+
+// Cach 2:
+	public void OnHintButtonClick(){
+
+		hintCurrentIndex = hintCurrentIndex + 1;
+
+		if (hintCurrentIndex == hintsList.Count - 1) {
+			hintButton.transform.localScale = new Vector3 (-1, 1, 1);
+		} else {
+			hintButton.transform.localScale = new Vector3 (1,1,1);
+		}
+
+		if (hintCurrentIndex == hintsList.Count) {
+			hintCurrentIndex = 0;
+		}
+
+		for (int i = 0; i < hintsList.Count; i++) {
+			if (i == hintCurrentIndex) {
+				hintsList [i].gameObject.SetActive (true);
+			} else
+				hintsList [i].gameObject.SetActive (false);
+		}
+
+	}
+}
